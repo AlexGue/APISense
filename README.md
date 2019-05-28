@@ -1,7 +1,6 @@
 <p align="center">
     <img src="https://i.imgur.com/yeM70JU.png">
     <h2>The Express middleware for microservice tracing</h2>
-     <h2>The Express middleware for microservice tracing</h2>
 </p>
 
 <p>
@@ -13,9 +12,9 @@
 
 <h2>1. How to implement APISense?</h2>
 Add the middleware in all the services you want to trace:
-```javascript
-//app.use(require('@alexgue/apisense')())
-```
+<code>
+app.use(require('@alexgue/apisense')())
+</code>
 
 
 
@@ -23,5 +22,6 @@ Add the middleware in all the services you want to trace:
 <h2>2. How to use APISense?</h2>
 APISense deploy a new interface in every service deployed. You can access the APISense interface from the service URL + "/apisense".
 Example:
+<code>
 localhost:8000/apisense
- 
+ </code>
